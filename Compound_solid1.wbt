@@ -1,0 +1,226 @@
+#VRML_SIM R2019a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6390626042909304 0.7491852920363082 0.17412749924513735 0.6607922682298834
+  position 1.0586554306056737 0.9724729746191138 1.3435996469572264
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+}
+DEF Square Solid {
+  translation 0 0.36000000000000004 0.049999999999999975
+  children [
+    DEF GR_OBJECT Group {
+      children [
+        DEF S_CYL1 Shape {
+          appearance DEF C_CYL PBRAppearance {
+            baseColor 0.12549019607843137 0.2901960784313726 0.5294117647058824
+          }
+          geometry DEF G_CYL Cylinder {
+            height 0.36
+            radius 0.03
+          }
+        }
+        DEF S_SHPERE1 Transform {
+          translation 0 0.18 0
+          children [
+            Shape {
+              appearance DEF C_SPHERE PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry DEF G_SPHERE Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SHPERE2 Transform {
+          translation 0 -0.18 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.6431372549019608 0 0
+              }
+              geometry Sphere {
+                radius 0.08
+              }
+            }
+          ]
+        }
+        DEF S_SHPERE3 Transform {
+          translation 0.36 0.18 0
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_SHPERE4 Transform {
+          translation 0.36 -0.18 0
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_SHPERE5 Transform {
+          translation 0.36 -0.18 -0.36
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_SHPERE6 Transform {
+          translation 0 -0.18 -0.36
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_SHPERE7 Transform {
+          translation 0 0.18 -0.36
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_SHPERE7 Transform {
+          translation 0.36 0.18 -0.36
+          children [
+            Shape {
+              appearance USE C_SPHERE
+              geometry USE G_SPHERE
+            }
+          ]
+        }
+        DEF S_CYL2 Transform {
+          translation 0.18 0.18 0
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL3 Transform {
+          translation 0.18 -0.18 0
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL4 Transform {
+          translation 0.36 0 0
+          rotation 0 0 1 0
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL5 Transform {
+          translation 0.36 0 -0.36
+          rotation 0 0 1 0
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL6 Transform {
+          translation 0 0 -0.36
+          rotation 0 0 1 0
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL6 Transform {
+          translation 0.18 0.18 -0.36
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL7 Transform {
+          translation 0.18 -0.18 -0.36
+          rotation 0 0 1 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL8 Transform {
+          translation 0 -0.18 -0.18
+          rotation 1 0 0 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL8 Transform {
+          translation 0.36 -0.18 -0.18
+          rotation 1 0 0 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL9 Transform {
+          translation 0.36 0.18 -0.18
+          rotation 1 0 0 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+        DEF S_CYL9 Transform {
+          translation 0 0.18 -0.18
+          rotation 1 0 0 1.5707996938995747
+          children [
+            Shape {
+              appearance USE C_CYL
+              geometry USE G_CYL
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  boundingObject USE GR_OBJECT
+  physics Physics {
+    density -1
+    mass 1
+  }
+}
